@@ -1,4 +1,3 @@
-yarn install
-yarn
-yarn build
+npm
+npm build
 npm run serve
