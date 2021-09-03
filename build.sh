@@ -1,3 +1,3 @@
-npm
+yarn
 npm build
 npm run serve
