@@ -94,7 +94,7 @@ npm run serve
 
 <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create4.png" width="600">
 
-可点击部署记录的「查看结果」来查看部署到OSS存储中的静态资源。并将资源的链接复制下来，供其它网站等引用访问。
+可点击部署记录的「查看结果」来查看部署到OSS存储中的静态资源。
 
 <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create6.png" width="400">
 
