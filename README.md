@@ -66,8 +66,6 @@ npm run serve
 
 - 「GitHub」需按说明，在GitHub仓库内配置您的阿里云AccessKeyId、AccessKeySecret。
 
-    <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create3.png" width="300">
-
 - 「资源路径」需填写“./build”，因为docusaurus框架生成的静态资源，默认是存放在build目录下的。开发平台会将该目录下的文件完整存储到OSS中，供网站访问使用。
 
 - OSS配置中，需要选择OSS地域和与其对应的OSSBucket。关于OSS，可打开https://oss.console.aliyun.com/bucket ，开通OSS服务，并创建OSS Bucket。若要用的域名暂无公安部备案信息可用，建议选择中国内地以外的OSS地域创建Bucket，如“美国-硅谷”。开通OSS和创建OSS Bucket不收取用户费用。
