@@ -9,7 +9,7 @@ docusaurusDocusaurus是一个用于轻松构建、部署和维护开源项目网
 
 项目官网：https://docusaurus.io/
 
-项目地址：https://github.com/facebook/docusaurus
+源项目地址：https://github.com/facebook/docusaurus
 
 ### **最佳实践**
 
