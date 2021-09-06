@@ -96,13 +96,13 @@ npm run serve
 
 可点击部署记录的「查看结果」来查看部署到OSS存储中的静态资源。
 
-<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create6.png" width="400">
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/data2.png" width="400">
 
 <img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/result_download.png" width="350">
 
 可点击部署记录的「查看日志」查看部署的详细过程，并在部署发生错误时，精确定位学习错误情况。
 
-<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/log.png" width="450">
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/data1.png" width="400">
 
 部署操作可以在每次更新内容并push后再次进行，实现静态网站内容的按需实时更新。
 
