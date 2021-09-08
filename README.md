@@ -60,29 +60,10 @@ npm run serve
 
 3.2 开发部署配置
 
-3.2.1 填写日常/线上环境的部署配置
-
+填写日常/线上环境的部署配置
 按照"?"提示，依次填写部署配置信息。其中：
 
-- 「GitHub」需按说明，在GitHub仓库内配置您的阿里云AccessKeyId、AccessKeySecret。
-
 - 「资源路径」需填写“./build”，因为docusaurus框架生成的静态资源，默认是存放在build目录下的。开发平台会将该目录下的文件完整存储到OSS中，供网站访问使用。
-
-- OSS配置中，需要选择OSS地域和与其对应的OSS Bucket。关于OSS，可打开https://oss.console.aliyun.com/bucket ，开通OSS服务，并创建OSS Bucket。若要用的域名暂无公安部备案信息可用，建议选择中国内地以外的OSS地域创建Bucket，如“美国-硅谷”。开通OSS和创建OSS Bucket不收取用户费用。
-
-    新建OSS Bucket及查看Bucket列表的链接：https://oss.console.aliyun.com/bucket
-
-    新建及查看操作示意图：
-
-    <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/oss_new1.png" width="450px">
-<br/>
-    <img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/oss_list.png" width="450px">
-
-3.2.2 填写日常/线上环境的分支管理
-
-按需选择要发布的代码所在的分支，可新建分支（从主干分支分叉）或选择已有分支。建议可以使用新建分支，创建名称更规范的代码分支。
-
-<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/branch.png" width="300">
 
 3.3 进行项目的部署和查看
 
