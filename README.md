@@ -63,7 +63,8 @@ npm run serve
 填写日常/线上环境的部署配置
 按照"?"提示，依次填写部署配置信息。其中：
 
-- 「资源路径」需填写“./build”，因为docusaurus框架生成的静态资源，默认是存放在build目录下的。开发平台会将该目录下的文件完整存储到OSS中，供网站访问使用。
+- 如需使用自定义域名访问，可将自定义域名填入对应位置，并在部署成功后，根据步骤3.4进行域名解析后实现自定义域名访问</br>
+  <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/build.png" width="400">
 
 3.3 进行项目的部署和查看
 
@@ -71,17 +72,25 @@ npm run serve
 
 <img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/deploy.png" width="300">
 
-在部署完成后，部署状态会显示为“已部署”。且部署网站的记录和过程，也会被完整记录下来：
+3.3.1 部署完成，查看部署结果
+
+访问**测试域名**或者**自定义域名**，以下以测试域名为例
+
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create7.png" width="650">
+
+<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create8.png" width="650">
+
+3.3.2 在部署完成后，部署状态会显示为“已部署”。且部署网站的记录和过程，也会被完整记录下来：
 
 <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create4.png" width="600">
 
-可点击部署记录的「查看结果」来查看部署到OSS存储中的静态资源。
+3.3.3可点击部署记录的「查看结果」来查看部署到OSS存储中的静态资源。
 
 <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/data2.png" width="400">
 
 <img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/result_download.png" width="350">
 
-可点击部署记录的「查看日志」查看部署的详细过程，并在部署发生错误时，精确定位学习错误情况。
+3.3.4 可点击部署记录的「查看日志」查看部署的详细过程，并在部署发生错误时，精确定位学习错误情况。
 
 <img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/data1.png" width="400">
 
@@ -89,15 +98,7 @@ npm run serve
 
 3.4 将OSS存储中的项目发布为网站链接
 
-发布到OSS存储中的资源，由于相关政策和要求，不能使用「查看结果」中的链接和域名直接访问，需要将*OSS Bucket的访问域名* 和 *自己的域名* 做双向绑定和解析。操作步骤如下：
-
-3.4.1 绑定OSS Bucket的访问域名到自己的域名上
-
-需要在https://oss.console.aliyun.com/bucket 中查看OSS列表，点击进入自己使用的Bucket，选择「传输管理」「绑定域名」，输入自己的域名，点击确定即可。
-
-<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/domain_1.png" width="500">
-
-3.4.2 解析自己的域名到OSS Bucket的访问域名上
+3.4.1 解析自己的域名到OSS Bucket的访问域名上
 
 打开自己域名的DNS解析控制台，使用阿里云域名或其它提供商的域名均可，此处以阿里云为例：
 
@@ -115,21 +116,13 @@ npm run serve
 
 完成配置后，稍等片刻，确定使用https://zijian.aliyun.com/ ，或者ping/dig/nslookup等指令可以查找到本域名的解析情况。
 
-3.4.3 当URL仅访问目录而非目录下的HTML文件时，由OSS托管路由自动定向至目录下的指定HTML文件
+3.4.2 当URL仅访问目录而非目录下的HTML文件时，由OSS托管路由自动定向至目录下的指定HTML文件
 
 某些前端项目生成的静态代码，其HTML中嵌入的链接地址是不含index.html的。这要求放置HTML文件的存储，或NGINX服务器等，有将裸访问路径自动对应到具体HTML文件的能力。
 
 OSS Bucket具有该托管能力，需要在使用的OSS Bucket内，选择「基础设置」「静态页面」，并如下图所示，填写默认首页为index.html，开通子目录首页功能，并点击「保存」。
 
 <img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/hexo/oss_index.png" width="350">
-
-3.4.4 部署完成，查看部署结果
-
-访问**测试域名**或者**绑定的域名**，均可看到网页首页：以下以测试域名为例
-
-<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create7.png" width="650">
-
-<img src="https://readme-img-2.oss-us-west-1.aliyuncs.com/feApp/github/docs/create8.png" width="650">
 
 3.5 （可选）使用CDN加速域名访问，节约流量费用
 
