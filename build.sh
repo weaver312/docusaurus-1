@@ -1,2 +1,3 @@
-npm i
-npm run build
+yarn install
+yarn
+yarn build
